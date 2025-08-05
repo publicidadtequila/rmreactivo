@@ -7,13 +7,13 @@ import {
 } from "firebase/messaging";
 import { getAuth } from "firebase/auth";
 const firebaseConfig = {
-  apiKey: "",
-  authDomain: "",
-  projectId: "",
-  storageBucket: "",
-  messagingSenderId: "",
-  appId: "",
-  measurementId: "",
+  apiKey: "AIzaSyDzGQOJhLy_xnszmPJGWcgfOgyGtGfAif8",
+  authDomain: "rapidoymas-d96b3.firebaseapp.com",
+  projectId: "rapidoymas-d96b3",
+  storageBucket: "rapidoymas-d96b3.firebasestorage.app",
+  messagingSenderId: "181757862393",
+  appId: "1:181757862393:web:eaf22c2da5101d7e949d28",
+  measurementId: "G-3FSYNR2LZ6"
 };
 const firebaseApp = !getApps().length
   ? initializeApp(firebaseConfig)
@@ -33,7 +33,7 @@ const messaging = (async () => {
 export const fetchToken = async (setTokenFound, setFcmToken) => {
   return getToken(await messaging, {
     vapidKey:
-      "",
+      "IbkJpg1bfdNtXhgEPxM_LHhdgeTZhjh7GaEszVVb9t-6O3oQq8q-TVsslaunwJ_mP6gN1SmyS07tq4echj5OQI",
   })
     .then((currentToken) => {
       if (currentToken) {
